@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="29" tests="77" time="231.407">
+ <testsuite name="Validiting fields on login page" timestamp="2019-11-22T13:11:24" hostname="localhost" time="7.41" errors="0" tests="6" skipped="0" disabled="0" failures="6">
+  <testcase classname="Validiting fields on login page" name="should invalidate email without @ symbol" time="6.397">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;Email throws no error on missing @ symbol&apos;."><![CDATA[Error: Failed expectation
+    at invalidClass (G:\techlogix\NA-autotests\login-flow.js:14:51)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\login-flow.js:20:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate email with spaces" time="0.168">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;Email throws no error if contains spaces&apos;."><![CDATA[Error: Failed expectation
+    at invalidClass (G:\techlogix\NA-autotests\login-flow.js:14:51)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\login-flow.js:24:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate email with wrong domain" time="0.138">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;Email throws no error if contains wrong domain&apos;."><![CDATA[Error: Failed expectation
+    at invalidClass (G:\techlogix\NA-autotests\login-flow.js:14:51)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\login-flow.js:28:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate email which crosses max length" time="0.363">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;Email throws no error if it crosses max length limit&apos;."><![CDATA[Error: Failed expectation
+    at invalidClass (G:\techlogix\NA-autotests\login-flow.js:14:51)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\login-flow.js:32:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password with value &lt; min length" time="0.134">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;Password throws no error if value &lt; min length&apos;."><![CDATA[Error: Failed expectation
+    at invalidClass (G:\techlogix\NA-autotests\login-flow.js:14:51)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\login-flow.js:36:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password with value &lt; min length" time="0.209">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;Password throws no error if it crosses max length limit&apos;."><![CDATA[Error: Failed expectation
+    at invalidClass (G:\techlogix\NA-autotests\login-flow.js:14:51)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\login-flow.js:40:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Checking login page flow" timestamp="2019-11-22T13:11:32" hostname="localhost" time="4.49" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Checking login page flow" name="should not be able to login with incorrect email" time="2.157" />
+  <testcase classname="Checking login page flow" name="should not be able to login with incorrect password" time="1.535" />
+  <testcase classname="Checking login page flow" name="should be able to login" time="0.797" />
+ </testsuite>
+ <testsuite name="Validiting fields on submit painting page" timestamp="2019-11-22T13:11:36" hostname="localhost" time="7.137" errors="0" tests="5" skipped="0" disabled="0" failures="1">
+  <testcase classname="Validiting fields on submit painting page" name="should be able to direct to submit painting page" time="6.421" />
+  <testcase classname="Validiting fields on submit painting page" name="should invalidate empty painting name field" time="0.188" />
+  <testcase classname="Validiting fields on submit painting page" name="should invalidate empty inspired from field" time="0.188" />
+  <testcase classname="Validiting fields on submit painting page" name="should invalidate empty cost field" time="0.172" />
+  <testcase classname="Validiting fields on submit painting page" name="should invalidate cost if has non numeric character(s)" time="0.166">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on cost if has non numeric character(s)&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\submit-painting\validate-submit-painting.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Entering details on create artist page" timestamp="2019-11-22T13:11:43" hostname="localhost" time="8.282" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on create artist page" name="should be able to create artist into system" time="8.282" />
+ </testsuite>
+ <testsuite name="Validiting fields on signup page" timestamp="2019-11-22T13:11:52" hostname="localhost" time="47.067" errors="0" tests="12" skipped="0" disabled="0" failures="7">
+  <testcase classname="Validiting fields on signup page" name="should be able to direct to create artist page" time="19.811">
+   <failure type="exception" message="Failed: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-VFCD2DS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: unknown"><![CDATA[ScriptTimeoutError: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-VFCD2DS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at doSend.then.response (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From: Task: Protractor.waitForAngular()
+    at thenableWebDriverProxy.schedule (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at ProtractorBrowser.executeAsyncScript_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\browser.js:425:28)
+    at angularAppRoot.then (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\browser.js:456:33)
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From: Task: Run it("should be able to direct to create artist page") in control flow
+    at UserContext.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:22:5)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email without @ symbol" time="11.03">
+   <failure type="exception" message="Failed: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-VFCD2DS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: unknown"><![CDATA[ScriptTimeoutError: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-VFCD2DS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at doSend.then.response (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From: Task: Protractor.waitForAngular() - Locator: By(css selector, [formcontrolname="email"])
+    at thenableWebDriverProxy.schedule (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at ProtractorBrowser.executeAsyncScript_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\browser.js:425:28)
+    at angularAppRoot.then (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\browser.js:456:33)
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as sendKeys] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+    at Object.exports.sendKeysUsingElement (G:\techlogix\NA-autotests\helper.js:142:24)
+    at invalidClass (G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:12:16)
+    at UserContext.<anonymous> (G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:34:9)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+From: Task: Run it("should invalidate email without @ symbol") in control flow
+    at UserContext.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:33:5)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email without no Dot" time="11.126">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if dot is missing&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email with spaces" time="0.503" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate email exceeding max length" time="1.841" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate password if length &lt; min length" time="0.34">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if length &lt; min length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate password exceeding max length" time="0.653">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate password if does not contain atleast 1 number" time="0.293">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 number&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.315">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 Upper case letter&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate Confirm Password if different from Password" time="0.482" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate contact number if has non numeric character(s)" time="0.43" />
+  <testcase classname="Validiting fields on signup page" name="should validate password if strong" time="0.242" />
+ </testsuite>
+ <testsuite name="Entering details on create artist page" timestamp="2019-11-22T13:12:39" hostname="localhost" time="26.608" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on create artist page" name="should be able to create artist into system" time="26.608" />
+ </testsuite>
+ <testsuite name="Validiting fields on login page" timestamp="2019-11-22T13:13:05" hostname="localhost" time="15.257" errors="0" tests="13" skipped="0" disabled="0" failures="5">
+  <testcase classname="Validiting fields on login page" name="should be able to direct to create venue page" time="9.23" />
+  <testcase classname="Validiting fields on login page" name="should invalidate email without @ symbol" time="0.476" />
+  <testcase classname="Validiting fields on login page" name="should invalidate email without no Dot" time="0.427">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if dot is missing&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate email with spaces" time="0.455" />
+  <testcase classname="Validiting fields on login page" name="should invalidate email exceeding max length" time="1.805" />
+  <testcase classname="Validiting fields on login page" name="should invalidate password if length &lt; min length" time="0.307">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-valid ng-dirty&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if length &lt; min length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password exceeding max length" time="0.617">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-valid ng-dirty ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password if does not contain atleast 1 number" time="0.282">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-valid ng-dirty ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 number&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.285">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-valid ng-dirty ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 Upper case letter&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate Confirm Password if different from Password" time="0.45" />
+  <testcase classname="Validiting fields on login page" name="should invalidate capacity if has non numeric character(s)" time="0.255" />
+  <testcase classname="Validiting fields on login page" name="should invalidate contact number if has non numeric character(s)" time="0.445" />
+  <testcase classname="Validiting fields on login page" name="should validate password if strong" time="0.222" />
+ </testsuite>
+ <testsuite name="Entering details on create venue page" timestamp="2019-11-22T13:13:21" hostname="localhost" time="24.96" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on create venue page" name="should be able to create venue into system" time="24.958" />
+ </testsuite>
+ <testsuite name="Validiting fields on login page" timestamp="2019-11-22T13:13:46" hostname="localhost" time="13.943" errors="0" tests="12" skipped="0" disabled="0" failures="2">
+  <testcase classname="Validiting fields on login page" name="should invalidate email without @ symbol" time="7.577" />
+  <testcase classname="Validiting fields on login page" name="should invalidate email without no Dot" time="0.453" />
+  <testcase classname="Validiting fields on login page" name="should invalidate email with spaces" time="0.464" />
+  <testcase classname="Validiting fields on login page" name="should invalidate email exceeding max length" time="2.48">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\venue-signup\validate-venue-signup.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password if length &lt; min length" time="0.293" />
+  <testcase classname="Validiting fields on login page" name="should invalidate password exceeding max length" time="0.648">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\venue-signup\validate-venue-signup.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on login page" name="should invalidate password if does not contain atleast 1 number" time="0.298" />
+  <testcase classname="Validiting fields on login page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.293" />
+  <testcase classname="Validiting fields on login page" name="should invalidate Confirm Password if different from Password" time="0.467" />
+  <testcase classname="Validiting fields on login page" name="should invalidate capacity if has non numeric character(s)" time="0.262" />
+  <testcase classname="Validiting fields on login page" name="should invalidate contact number if has non numeric character(s)" time="0.459" />
+  <testcase classname="Validiting fields on login page" name="should validate password if strong" time="0.248" />
+ </testsuite>
+ <testsuite name="Entering details on VCP signup page" timestamp="2019-11-22T13:14:00" hostname="localhost" time="14.894" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="Entering details on VCP signup page" name="should be able to register venue into system" time="14.893">
+   <failure type="exception" message="Failed: Error while running testForAngular: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-VFCD2DS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: unknown"><![CDATA[Error: Error while running testForAngular: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-VFCD2DS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+    at executeAsyncScript_.then (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\browser.js:727:23)
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From: Task: Run it("should be able to register venue into system") in control flow
+    at UserContext.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (G:\techlogix\NA-autotests\public-portal\venue-signup\venue-signup-flow.js:21:5)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (G:\techlogix\NA-autotests\public-portal\venue-signup\venue-signup-flow.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Validiting fields on signup page" timestamp="2019-11-22T13:14:15" hostname="localhost" time="24.393" errors="0" tests="11" skipped="0" disabled="0" failures="3">
+  <testcase classname="Validiting fields on signup page" name="should invalidate email without @ symbol" time="15.885">
+   <failure type="exception" message="Failed: Error while running testForAngular: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-VFCD2DS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: unknown"><![CDATA[Error: Error while running testForAngular: script timeout
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-VFCD2DS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+    at executeAsyncScript_.then (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\built\browser.js:727:23)
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From: Task: Run it("should invalidate email without @ symbol") in control flow
+    at UserContext.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (G:\techlogix\NA-autotests\public-portal\artist-signup\validate-artist-signup.js:23:5)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (G:\techlogix\NA-autotests\public-portal\artist-signup\validate-artist-signup.js:7:1)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email without no Dot" time="1.391" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate email with spaces" time="0.504" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate email exceeding max length" time="3.578">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\artist-signup\validate-artist-signup.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate password if length &lt; min length" time="0.373" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate password exceeding max length" time="0.744">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\artist-signup\validate-artist-signup.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate password if does not contain atleast 1 number" time="0.353" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.334" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate Confirm Password if different from Password" time="0.521" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate contact number if has non numeric character(s)" time="0.439" />
+  <testcase classname="Validiting fields on signup page" name="should validate password if strong" time="0.27" />
+ </testsuite>
+ <testsuite name="Entering details on artist signup page" timestamp="2019-11-22T13:14:39" hostname="localhost" time="21.486" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on artist signup page" name="should be able to register artist into system" time="21.486" />
+ </testsuite>
+ <testsuite name="Validiting fields on signup page" timestamp="2019-11-22T13:15:00" hostname="localhost" time="6.098" errors="0" tests="7" skipped="0" disabled="0" failures="4">
+  <testcase classname="Validiting fields on signup page" name="should invalidate empty ticket number" time="4.222" />
+  <testcase classname="Validiting fields on signup page" name="should be able to find valid ticket" time="0.374" />
+  <testcase classname="Validiting fields on signup page" name="should invalidate email without @ symbol" time="0.275">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if @ is missing&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\cancel-booking\validate-cancel-booking.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email without no Dot" time="0.225">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if dot is missing&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\cancel-booking\validate-cancel-booking.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email with spaces" time="0.23">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if has spaces&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\cancel-booking\validate-cancel-booking.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate email exceeding max length" time="0.524">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if exceeds max length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\public-portal\cancel-booking\validate-cancel-booking.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on signup page" name="should invalidate contact number if has non numeric character(s)" time="0.248" />
+ </testsuite>
+ <testsuite name="Entering details on cancel booking page" timestamp="2019-11-22T13:15:06" hostname="localhost" time="9.382" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on cancel booking page" name="should not be able to find invalid ticket" time="7.49" />
+  <testcase classname="Entering details on cancel booking page" name="should be able to find valid ticket" time="0.373" />
+  <testcase classname="Entering details on cancel booking page" name="should be able to cancel after finding a ticket" time="1.519" />
+ </testsuite>
+</testsuites>

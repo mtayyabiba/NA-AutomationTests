@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="3" time="23.047">
+ <testsuite name="Entering details on artist signup page" timestamp="2019-12-04T11:09:17" hostname="localhost" time="23.047" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on artist signup page" name="should be able to enter customer details" time="15.068" />
+  <testcase classname="Entering details on artist signup page" name="should be able to sign up the customer" time="0.976" />
+  <testcase classname="Entering details on artist signup page" name="should be able to signin the customer" time="7.002" />
+ </testsuite>
+</testsuites>

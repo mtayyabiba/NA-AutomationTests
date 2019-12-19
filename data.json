@@ -1,0 +1,174 @@
+{
+    "dev":{
+        "publicPortal":"http://172.17.40.196:6070/",
+        "adminPortal":"http://172.17.40.196:6060/",
+        "adminEmail":"usman5@nat.com",
+        "adminPassword": "pakistan1"
+    },
+    "qa":{
+        "publicPortal":"http://172.17.41.33:6070/",
+        "adminPortal":"http://172.17.41.33:6060/",
+        "adminEmail":"admin@nat.com",
+        "adminPassword": "pakistan1"
+    },
+    "uat":{
+        "publicPortal":"http://nat-dev-public-portal.azurewebsites.net/",
+        "adminPortal":"http://nat-dev-admin-portal.azurewebsites.net/",
+        "adminEmail":"usman5@nat.com",
+        "adminPassword": "pakistan1"
+    },
+    "invalidEmail":{
+        "noAtSign":"adminnat.com",
+        "noDot":"admin@natcom",
+        "withSpaces":"admin @nat.com",
+        "maxLength":"adminadminadminadminadminadminadminadminadminadminadminadminadmin@nat.com"
+    },
+    "invalidPassword":{
+        "minLength": "1234A",
+        "maxLength": "12345678901234567890123456789A1",
+        "noNumber": "defg@Abc",
+        "noUppercase": "defg@abc"
+    },
+
+    "venueDetailsPublic":{
+        "url":"venue/signup",
+        "textFields":{
+            "venueName":"Public Venue",
+            "capacity":60,
+            "location":"Brooks",
+            "zipCode":"P9E 1C4",
+            "address":"9999 Hillside Dr",
+            "fullName":"Public VCP",
+            "email":"vcp.id@mailinator.com",
+            "designation":"Manager",
+            "contact":6049997778,
+            "password":"1234@Abc"
+        },
+        "category":"Auditorium",
+        "country":"Canada",
+        "city":"Brooks",
+        "facilities":["Wheel Chairs","WIFI"],
+        "venueImages":["Front","Back","Bar","Decor","Seating"],
+        "availability":[
+            ["0900AM","1100AM",[0,1,2,3,4,5,6]],
+            ["0100PM","0900PM",[0,1,2,3,4,5,6]]
+        ]
+    },
+
+    "artistDetailsPublic":{
+        "url":"artist/signup",
+        "textFields":{
+            "firstName":"Artist",
+            "lastName":"Public",
+            "contact":6046661111,
+            "zipCode":"P5E 1C5",
+            "address":"999 Dry Pine Bay Rd",
+            "studioBusiness":"Artist Business",
+            "email":"artist.id@mailinator.com",
+            "portfolioUrl":"artisticjohn.com",
+            "password":"1234@Abc"
+        },
+        "country":"Canada",
+        "city":"Brooks",
+        "availability":[
+            ["0900AM","1100AM",[0,1,2,3,4,5,6]],
+            ["0100PM","0900PM",[0,1,2,3,4,5,6]]
+        ],
+        "skills":[["Painting","Calligraphy"],
+            [4,3]
+        ]
+    },
+
+    "venueDetailsAdmin":{
+        "textFields":{
+            "venueName":"Admin Venue",
+            "capacity":60,
+            "location":"Brooks",
+            "zipCode":"P9E 1C4",
+            "address":"1652 Hillside Dr",
+            "fullName":"Admin VCP",
+            "email":"vcp.id@mailinator.com",
+            "designation":"Manager",
+            "contact":6049997778,
+            "password":"1234@Abc"
+        },
+        "category":"Auditorium",
+        "country":"Canada",
+        "city":"Brooks",
+        "facilities":["Wheel Chairs","WIFI"],
+        "venueImages":["Front","Back","Bar","Decor","Seating"],
+        "availability":[
+            ["0900AM","1100AM",[0,1,2,3,4,5,6]],
+            ["0100PM","0900PM",[0,1,2,3,4,5,6]]
+        ],
+        "userRole":"Venue"
+    },
+
+    "artistDetailsAdmin":{
+        "textFields":{
+            "firstName":"Artist",
+            "lastName":"Admin",
+            "contact":6046666666,
+            "zipCode":"P5E 1C5",
+            "address":"571 Dry Pine Bay Rd",
+            "studioBusiness":"Artist Business",
+            "email":"artist.id@mailinator.com",
+            "portfolioUrl":"artistportfolio.com",
+            "password":"1234@Abc"
+        },
+        "country":"Canada",
+        "city":"Brooks",
+        "location":"Brooks",
+        "availability":[
+            ["09:00am","11:00am",[0,1,2,3,4,5,6]],
+            ["0100PM","0900PM",[0,1,2,3,4,5,6]]
+        ],
+        "skills":[  ["Painting","Calligraphy"],
+                    [4,3]
+                ]
+    },
+    "eventDetailsAdmin":{
+        "name":"Event",
+        "category":"Fundraisers",
+        "duration":2,
+        "ageGroup":"Adults" , 
+        "location":"Brooks"  ,
+        "totalSeats":60   , 
+        "description":"Test event description"          
+    },
+
+    "customerDetails":{
+        "firstName":"Customer",
+        "lastName":"Test",
+        "countryCode":"+92",
+        "contact": 3032659826,
+        "email":"customer.id@mailinator.com",
+        "password":"1234@Abc"        
+    },
+    "customerEdits":{
+        "country":"Canada",
+        "state":"Alberta",
+        "city":"Brooks"
+    },
+
+    "submitPaintingAdmin":{
+        "textFields":{
+            "paintingName":"Test",
+            "inspiredFrom":"Protractor",
+            "cost":300
+        },
+        "paintingType":"Oil Painting",
+        "artistId":"",
+        "difficultyLevel":4
+    },
+
+    "cancelBooking":{
+        "url":"cancel",
+        "ticketNumber":["CAMROSE-163-A7","CAMROSE-163-C1"],
+        "email": "h.tayyab.m@gmail.com",
+        "countryCode":"+92",
+        "contactNo":"3032659826",
+        "reason":"I am unavailable"
+    }
+    
+}

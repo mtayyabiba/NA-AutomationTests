@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="8" tests="53" time="156.252">
+ <testsuite name="Validiting fields on create artist - admin portal page" timestamp="2019-11-28T11:46:09" hostname="localhost" time="16.608" errors="0" tests="10" skipped="0" disabled="0" failures="4">
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should be able to direct to create artist page" time="12.898" />
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate email without @ symbol" time="0.565" />
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate email without no Dot" time="0.48">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if dot is missing&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate email with spaces" time="0.486" />
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate password if length &lt; min length" time="0.298">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if length &lt; min length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate password if does not contain atleast 1 number" time="0.284">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 number&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.352">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-valid ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 Upper case letter&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-artist\validate-create-artist.js:14:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate Confirm Password if different from Password" time="0.536" />
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should invalidate contact number if has non numeric character(s)" time="0.46" />
+  <testcase classname="Validiting fields on create artist - admin portal page" name="should validate password if strong" time="0.248" />
+ </testsuite>
+ <testsuite name="Entering details on create artist - admin portal page" timestamp="2019-11-28T11:46:25" hostname="localhost" time="22.242" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on create artist - admin portal page" name="should be able to create artist into system" time="22.242" />
+ </testsuite>
+ <testsuite name="Validiting fields on create venue- admin portal page" timestamp="2019-11-28T11:46:48" hostname="localhost" time="13.754" errors="0" tests="11" skipped="0" disabled="0" failures="4">
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should be able to direct to create venue page" time="9.727" />
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate email without @ symbol" time="0.545" />
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate email without no Dot" time="0.487">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Email if dot is missing&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate email with spaces" time="0.547" />
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate password if length &lt; min length" time="0.3">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-valid ng-dirty&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if length &lt; min length&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate password if does not contain atleast 1 number" time="0.368">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-valid ng-dirty ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 number&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.289">
+   <failure type="toContain" message="Expected &apos;mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-valid ng-dirty ng-touched&apos; to contain &apos;ng-invalid&apos;, &apos;No error on Password if does not contain atleast 1 Upper case letter&apos;."><![CDATA[Error: Failed expectation
+    at G:\techlogix\NA-autotests\admin-portal\create-venue\validate-create-venue.js:15:74
+    at ManagedPromise.invokeCallback_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate Confirm Password if different from Password" time="0.479" />
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate capacity if has non numeric character(s)" time="0.266" />
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should invalidate contact number if has non numeric character(s)" time="0.501" />
+  <testcase classname="Validiting fields on create venue- admin portal page" name="should validate password if strong" time="0.245" />
+ </testsuite>
+ <testsuite name="Entering details on create venue page" timestamp="2019-11-28T11:47:01" hostname="localhost" time="24.939" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on create venue page" name="should be able to create venue into system" time="24.938" />
+ </testsuite>
+ <testsuite name="Validiting fields on venue signup page" timestamp="2019-11-28T11:47:26" hostname="localhost" time="11.673" errors="0" tests="10" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate email without @ symbol" time="8.162" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate email without no Dot" time="0.456" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate email with spaces" time="0.519" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate password if length &lt; min length" time="0.322" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate password if does not contain atleast 1 number" time="0.301" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.359" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate Confirm Password if different from Password" time="0.491" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate capacity if has non numeric character(s)" time="0.297" />
+  <testcase classname="Validiting fields on venue signup page" name="should invalidate contact number if has non numeric character(s)" time="0.509" />
+  <testcase classname="Validiting fields on venue signup page" name="should validate password if strong" time="0.257" />
+ </testsuite>
+ <testsuite name="Entering details on VCP signup page" timestamp="2019-11-28T11:47:38" hostname="localhost" time="23.057" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on VCP signup page" name="should be able to register venue into system" time="23.057" />
+ </testsuite>
+ <testsuite name="Validiting fields on artist signup page" timestamp="2019-11-28T11:48:01" hostname="localhost" time="9.333" errors="0" tests="9" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate email without @ symbol" time="6.209" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate email without no Dot" time="0.519" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate email with spaces" time="0.466" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate password if length &lt; min length" time="0.313" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate password if does not contain atleast 1 number" time="0.315" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate password if does not contain atleast 1 Upper case letter" time="0.321" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate Confirm Password if different from Password" time="0.531" />
+  <testcase classname="Validiting fields on artist signup page" name="should invalidate contact number if has non numeric character(s)" time="0.42" />
+  <testcase classname="Validiting fields on artist signup page" name="should validate password if strong" time="0.237" />
+ </testsuite>
+ <testsuite name="Entering details on artist signup page" timestamp="2019-11-28T11:48:10" hostname="localhost" time="17.239" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on artist signup page" name="should be able to register artist into system" time="17.239" />
+ </testsuite>
+ <testsuite name="Validiting fields on cancel booking page" timestamp="2019-11-28T11:48:28" hostname="localhost" time="6.675" errors="0" tests="6" skipped="0" disabled="0" failures="0">
+  <testcase classname="Validiting fields on cancel booking page" name="should invalidate empty ticket number" time="4.275" />
+  <testcase classname="Validiting fields on cancel booking page" name="should be able to find valid ticket" time="0.585" />
+  <testcase classname="Validiting fields on cancel booking page" name="should invalidate email without @ symbol" time="0.282" />
+  <testcase classname="Validiting fields on cancel booking page" name="should invalidate email without no Dot" time="0.241" />
+  <testcase classname="Validiting fields on cancel booking page" name="should invalidate email with spaces" time="0.24" />
+  <testcase classname="Validiting fields on cancel booking page" name="should invalidate contact number if has non numeric character(s)" time="1.052" />
+ </testsuite>
+ <testsuite name="Entering details on cancel booking page" timestamp="2019-11-28T11:48:34" hostname="localhost" time="10.732" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Entering details on cancel booking page" name="should not be able to find invalid ticket" time="7.5" />
+  <testcase classname="Entering details on cancel booking page" name="should be able to find valid ticket" time="0.847" />
+  <testcase classname="Entering details on cancel booking page" name="should be able to cancel after finding a ticket" time="2.385" />
+ </testsuite>
+</testsuites>
