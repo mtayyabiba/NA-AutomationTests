@@ -38,9 +38,9 @@ describe('Entering details on artist signup page',function(){
         helper.uploadFile('images/artist-images/',3,element.all(by.css('input[type="file"]')),0);       
     });
 
-    // it('should be able to submit artist details into system',function(){
-    //     helper.clickUsingElement("",pageObject.signupButton);
-    //     expect(browser.getCurrentUrl()).toContain("success");
+    it('should be able to submit artist details into system',function(){
+        helper.clickUsingElement("",pageObject.signupButton);
+        expect(browser.getCurrentUrl()).toContain("success");
         
-    // });
+    });
 });

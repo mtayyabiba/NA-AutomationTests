@@ -1,7 +1,6 @@
 var pageObject = require('./create-artist-map.js').map;
 var data = require('../../data.json');
 var helper = require('../../helper.js');
-var path = require('path');
 var loginObject = require('../../login-page-map.js').map;
 
 describe('Entering details on create artist - admin portal page',function(){

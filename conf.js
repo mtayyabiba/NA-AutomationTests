@@ -15,10 +15,10 @@ exports.config = {
         // 'admin-portal/create-venue/create-venue-flow.js',
         // 'admin-portal/submit-painting/validate-submit-painting.js',
         // 'admin-portal/submit-painting/submit-painting-flow.js',
-        'admin-portal/create-event/create-event-flow.js',
+        // 'admin-portal/create-event/create-event-flow.js',
 
         // 'public-portal/venue-signup/validate-venue-signup.js',
-        // 'public-portal/venue-signup/venue-signup-flow.js',
+        'public-portal/venue-signup/venue-signup-flow.js',
         // 'public-portal/artist-signup/validate-artist-signup.js',
         // 'public-portal/artist-signup/artist-signup-flow.js',  
         // 'public-portal/customer-signup/validate-customer-signup.js',  

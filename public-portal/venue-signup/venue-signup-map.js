@@ -22,5 +22,5 @@ exports.map = {
     selectButton: element.all(by.cssContainingText('[class="mat-button-wrapper"]', 'Select')),
     seatMapbutton: element.all(by.className('mat-tab-label-content')),
     mapSelectButton : element.all(by.xpath('/html/body/div[2]/div[2]/div/mat-dialog-container/nat-seat-maps-dialog/mat-dialog-content/div/div/div/mat-tab-group/div/mat-tab-body[1]/div/div[2]/button/span')),//all(by.tagName('button')),
-    signupButton: element.all(by.css('[type="submit"]'))
+    signupButton: element.all(by.className('Apply_Button'))
 }

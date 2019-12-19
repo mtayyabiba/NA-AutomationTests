@@ -1,7 +1,6 @@
 var pageObject = require('./create-venue-map.js').map;
 var data = require('../../data.json');
 var helper = require('../../helper.js');
-var path = require('path');
 var loginObject = require('../../login-page-map.js').map;
 
 describe('Entering details on create venue page',function(){

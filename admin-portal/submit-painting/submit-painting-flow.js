@@ -1,7 +1,6 @@
 var pageObject = require('./submit-painting-map.js').map;
 var data = require('../../data.json');
 var helper = require('../../helper.js');
-var path = require('path');
 var loginObject = require('../../login-page-map.js').map;
 
 var env = browser.params.server;
@@ -30,7 +29,7 @@ describe('Entering details on submit painting page',function(){
     });
 
     it('should be able to upload image on submit painting page',function(){
-        helper.uploadFile('images/paintings/',5,pageObject.uploadButton,0);
+        helper.uploadFile('images/paintings/',6,pageObject.uploadButton,0);
     });
     
     it('should be able to upload video tutorial on submit painting page',function(){
@@ -51,7 +50,7 @@ describe('Entering details on submit painting page',function(){
 
 //     it('should be able to find submitted painting',function(){
 //         browser.get(serverURL+"#/painting/list");
-//         helper.sendKeysUsingElement("",pageObject.searchInput,paintingNameVal,"Search input");
+//         helper.sendKeysUsingElement("",pageObject.searchInput,paintingNameVal+" "+data.time,"Search input");
 //         browser.driver.sleep(2000);
 //         expect(element.all(by.className('mat-card-image1')).count()).toBe(1);
 //     });
@@ -66,7 +65,7 @@ describe('Entering details on submit painting page',function(){
 //         }
         
 //         helper.selectSingleDropdown("",pageObject.paintingType,details.paintingType);
-//         helper.selectSingleDropdown("",pageObject.artistId,(details.artistId+1));
+//         helper.selectSingleDropdown("",pageObject.artistId,1);//(details.artistId+1));
 //         helper.clickUsingElement("",pageObject.difficultyLevel,((details.difficultyLevel+1)%5)); //increasing difficulty level by 1        
 //     });
 
