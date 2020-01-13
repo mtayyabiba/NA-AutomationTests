@@ -59,11 +59,9 @@ describe('Entering details on submit painting page',function(){
 //         //go to edit painting page
 //         helper.clickUsingElement("",element.all(by.className('mat-card-image1')));
 
-//         for(var keys in  details.textFields){
-//             pageObject[keys].clear();
-//             helper.sendKeysUsingElement("",pageObject[keys],10+details.textFields[keys],keys);
-//         }
-        
+//         helper.sendKeysUsingElement("",pageObject.inspiredFrom,10+details.textFields.inspiredFrom,"inspired from");
+//         helper.sendKeysUsingElement("",pageObject.cost,10+details.textFields.cost,"cost");
+
 //         helper.selectSingleDropdown("",pageObject.paintingType,details.paintingType);
 //         helper.selectSingleDropdown("",pageObject.artistId,1);//(details.artistId+1));
 //         helper.clickUsingElement("",pageObject.difficultyLevel,((details.difficultyLevel+1)%5)); //increasing difficulty level by 1        

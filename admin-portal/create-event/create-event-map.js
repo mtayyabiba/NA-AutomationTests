@@ -8,10 +8,15 @@ exports.map = {
     location: element.all(by.css("[formcontrolname='Location_ID']"))  ,
     totalSeats: element.all(by.css("[formcontrolname='total_seats']"))  ,
     description: element.all(by.css("[formcontrolname='Event_Description']"))  ,
+    tags: element.all(by.css("[formcontrolname='Chips']"))  ,
     selectArtistButton: element.all(by.cssContainingText('[class="mat-button-wrapper"]', 'Select Artist')),
+    searchArtist: element.all(by.xpath('/html/body/div[2]/div[2]/div/mat-dialog-container/nat-artist-select-dialog/mat-dialog-content/div/div/div[1]/nat-filter-inputs/div/div[1]/div/div/mat-form-field/div/div[1]/div[3]/input')),
+    selectArtistVenue: element.all(by.id('rating')),
     selectVenueButton: element.all(by.cssContainingText('[class="mat-button-wrapper"]', 'Select Venue')),
+    searchVenue: element.all(by.xpath('/html/body/div[2]/div[2]/div/mat-dialog-container/nat-venue-select-dialog/mat-dialog-content/div/div/div[1]/nat-filter-inputs/div/div[1]/div/div/mat-form-field/div/div[1]/div[3]/input')),
     selectPaintingButton: element.all(by.cssContainingText('[class="mat-button-wrapper"]', 'Choose File')),
+    searchPainting: element.all(by.xpath('/html/body/div[2]/div[2]/div/mat-dialog-container/nat-painting-select-dialog/mat-dialog-content/div/div/div[1]/nat-filter-inputs/div/div[1]/div/div/mat-form-field/div/div[1]/div[3]/input')),
+    selectPainting: element.all(by.className('img')),
     selectSeatingButton: element.all(by.className('anchor-tag')),
 
-    searchInput : element.all(by.className('mat-input-element'))
 }

@@ -24,9 +24,8 @@ describe('Entering details on create venue page',function(){
         browser.get(serverURL+"#/event/create");
         
         var eventTime = data.artistDetailsAdmin.availability[0][0].replace("am"," am").replace("pm"," pm");
-        var artistName = data.artistDetailsAdmin.textFields.firstName + " " +data.artistDetailsAdmin.textFields.lastName;
-        var venueName = data.venueDetailsAdmin.textFields.venueName;
-        var paintingName = data.submitPaintingAdmin.textFields.paintingName;
+        var venueName = "Venue 1576748289126"//+data.time;//1576748289126
+        var paintingName = "Test 1576748289126"//+data.time;//1576748289126
         var eventLocation = data.artistDetailsAdmin.location;
 
         helper.sendKeysUsingElement("",pageObject.name,details.name+" "+data.time,"Event Name");
@@ -38,8 +37,18 @@ describe('Entering details on create venue page',function(){
         helper.selectSingleDropdown("",pageObject.category,details.category);
         helper.selectSingleDropdown("",pageObject.ageGroup,details.ageGroup);
         helper.selectSingleDropdown("",pageObject.location,eventLocation);
+        helper.sendKeysUsingElement("",pageObject.tags,details.tags,"Tags");
+        // helper.clickUsingElement("",pageObject.selectVenueButton);
+        // helper.clickUsingElement("",pageObject.selectPaintingButton);
         
     });
 
+    it('should be able to select artist',function(){
+        var artistName = "Artist 1576748135829"//+data.time;//1576748135829
+        helper.clickUsingElement("",pageObject.selectArtistButton);
+        helper.sendKeysUsingElement("",pageObject.searchArtist,artistName,"Artist Name");
+        browser.driver.sleep(2000);
+        helper.clickUsingElement("",pageObject.selectArtistVenue);
 
+    });
 });

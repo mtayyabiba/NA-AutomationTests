@@ -17,7 +17,7 @@ describe('Entering details on create venue page',function(){
         browser.driver.sleep(1000);
     };
 
-    it('should be able to create venue into system',function(){
+    it('should be able to enter venue details',function(){
         browser.get(serverURL);
         //login if not logged in
         helper.loginFunc(loginObject.adminUserName,data[env]["adminEmail"],loginObject.adminPassword,data[env]["adminPassword"],loginObject.loginButton,serverURL+"#/dashboard"); 
@@ -32,9 +32,12 @@ describe('Entering details on create venue page',function(){
             helper.sendKeysUsingElement("",pageObject[keys],details.textFields[keys],keys);
         }
         helper.sendKeysUsingElement("",pageObject['confirmPassword'],details.textFields['password'],'confirmPassword');
-        
-        helper.selectSingleDropdown("",pageObject.category,details.category);
+    });
+
+    it('should be able to select venue details',function(){
+        helper.selectSingleDropdown("",pageObject.countryCode,details.countryCode);
         helper.selectSingleDropdown("",pageObject.country,details.country);
+        helper.selectSingleDropdown("",pageObject.category,details.category);
         helper.selectSingleDropdown("",pageObject.city,details.city);
         selectMultipleDropdown("",pageObject.facilities,details.facilities);  
         helper.clickUsingElement("",pageObject.closeDropdown);

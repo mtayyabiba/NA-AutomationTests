@@ -21,8 +21,11 @@ describe('Entering details on create artist - admin portal page',function(){
         for(var keys in  details.textFields){
             helper.sendKeysUsingElement("",pageObject[keys],details.textFields[keys],keys);
         }
-        helper.sendKeysUsingElement("",pageObject['confirmPassword'],details.textFields['password'],'confirmPassword');
-        
+        helper.sendKeysUsingElement("",pageObject['confirmPassword'],details.textFields['password'],'confirmPassword');       
+    });
+
+    it('should be able to select artist details',function(){
+        helper.selectSingleDropdown("",pageObject.countryCode,details.countryCode);
         helper.selectSingleDropdown("",pageObject.country,details.country);
         helper.selectSingleDropdown("",pageObject.city,details.city);
         helper.selectSingleDropdown("",pageObject.location,details.location);

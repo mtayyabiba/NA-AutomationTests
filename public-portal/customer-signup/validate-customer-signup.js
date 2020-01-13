@@ -63,9 +63,9 @@ describe('Validiting fields on customer signup page',function(){
         expect(pageObject.confirmPassword.get(0).getAttribute('aria-invalid')).toBe('true');
     });
 
-    it('should invalidate contact number if has non numeric character(s)',function(){
-        invalidClass("",pageObject.contact,details.contact+"a","No error on Contact Number if has non numeric character(s)",'contact number');
-    });
+    // it('should invalidate contact number if has non numeric character(s)',function(){
+    //     invalidClass("",pageObject.contact,details.contact+"a","No error on Contact Number if has non numeric character(s)",'contact number');
+    // });
 
     it('should validate password if strong',function(){
         helper.sendKeysUsingElement("",pageObject.password,details.password,'password');

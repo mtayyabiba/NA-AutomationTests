@@ -11,7 +11,6 @@ describe('Entering details on artist signup page',function(){
         // if(env=="dev") browser.get(serverURL+"#/"+details.url);
         browser.get(serverURL);
         helper.clickUsingElement("",pageObject.signinLink);
-        browser.driver.sleep(2000);
         helper.clickUsingElement("",pageObject.signupLink);
 
         details.lastName = details.lastName.replace("Test",data.time);
@@ -22,11 +21,11 @@ describe('Entering details on artist signup page',function(){
         helper.sendKeysUsingElement("",pageObject['confirmPassword'],details['password'],'confirmPassword');
     });
 
-    it('should be able to sign up the customer',function(){
-        helper.clickUsingElement("",pageObject.signupButton);
-        expect(browser.getCurrentUrl()).toContain("success");
+    // it('should be able to sign up the customer',function(){
+    //     helper.clickUsingElement("",pageObject.signupButton);
+    //     expect(browser.getCurrentUrl()).toContain("success");
         
-    });
+    // });
 //customer.1575439755232@mailinator.com
     it('should be able to signin the customer',function(){
         browser.get(serverURL);

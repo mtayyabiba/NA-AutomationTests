@@ -28,9 +28,12 @@ describe('Entering details on VCP signup page',function(){
             helper.sendKeysUsingElement("",pageObject[keys],details.textFields[keys],keys);
         }
         helper.sendKeysUsingElement("",pageObject['confirmPassword'],details.textFields['password'],'confirmPassword');
-        
-        helper.selectSingleDropdown("",pageObject.category,details.category);
+    });
+
+    it('should be able to select venue details',function(){
+        helper.selectSingleDropdown("",pageObject.countryCode,details.countryCode);
         helper.selectSingleDropdown("",pageObject.country,details.country);
+        helper.selectSingleDropdown("",pageObject.category,details.category);
         helper.selectSingleDropdown("",pageObject.city,details.city);
         selectMultipleDropdown("",pageObject.facilities,details.facilities);  
         helper.clickUsingElement("",pageObject.closeDropdown);

@@ -28,9 +28,9 @@ describe('Validiting fields on login page',function(){
         invalidClass("",emailAddElem,data.invalidEmail.noDot,'Email throws no error if contains wrong domain');
     });
 
-    it('should invalidate email which crosses max length',function(){
-        invalidClass("",emailAddElem,data.invalidEmail.maxLength,'Email throws no error if it crosses max length limit');
-    });
+    // it('should invalidate email which crosses max length',function(){
+    //     invalidClass("",emailAddElem,data.invalidEmail.maxLength,'Email throws no error if it crosses max length limit');
+    // });
 
     it('should invalidate password with value < min length',function(){
         invalidClass("",passwordElem,data.invalidPassword.minLength,'Password throws no error if value < min length');

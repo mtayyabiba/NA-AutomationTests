@@ -44,6 +44,7 @@
             "contact":6049997778,
             "password":"1234@Abc"
         },
+        "countryCode":"Canada (+1)",
         "category":"Auditorium",
         "country":"Canada",
         "city":"Brooks",
@@ -68,6 +69,7 @@
             "portfolioUrl":"artisticjohn.com",
             "password":"1234@Abc"
         },
+        "countryCode":"Canada (+1)",
         "country":"Canada",
         "city":"Brooks",
         "availability":[
@@ -92,6 +94,7 @@
             "contact":6049997778,
             "password":"1234@Abc"
         },
+        "countryCode":"Canada (+1)",
         "category":"Auditorium",
         "country":"Canada",
         "city":"Brooks",
@@ -116,6 +119,7 @@
             "portfolioUrl":"artistportfolio.com",
             "password":"1234@Abc"
         },
+        "countryCode":"Canada (+1)",
         "country":"Canada",
         "city":"Brooks",
         "location":"Brooks",
@@ -134,14 +138,13 @@
         "ageGroup":"Adults" , 
         "location":"Brooks"  ,
         "totalSeats":60   , 
-        "description":"Test event description"          
+        "description":"Test event description",
+        "tags":"fundraiser"          
     },
 
     "customerDetails":{
         "firstName":"Customer",
         "lastName":"Test",
-        "countryCode":"+92",
-        "contact": 3032659826,
         "email":"customer.id@mailinator.com",
         "password":"1234@Abc"        
     },

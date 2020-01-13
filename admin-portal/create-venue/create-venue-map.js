@@ -11,7 +11,8 @@ exports.map = {
     fullName: element.all(by.css("[formcontrolname='Full_Name']"))  ,
     email: element.all(by.css("[formcontrolname='Email']"))  ,
     designation: element.all(by.css("[formcontrolname='Designation']"))  ,
-    contact: element.all(by.css("[formcontrolname='Contact_Number']"))  ,
+    countryCode: element.all(by.id('country-code')) ,
+    contact: element.all(by.id('contact-no')) ,
     password: element.all(by.css("[formcontrolname='Password']"))  ,
     confirmPassword: element.all(by.css("[formcontrolname='Confirm_Password']"))  ,
     startTime: element.all(by.css("[formcontrolname='start_time']"))  ,
@@ -22,7 +23,7 @@ exports.map = {
     userRole: element.all(by.css("[formcontrolname='UserRole']"))  ,
     selectButton: element.all(by.cssContainingText('[class="mat-button-wrapper"]', 'Select')),
     seatMapbutton: element.all(by.className('mat-tab-label-content')),
-    mapSelectButton : element.all(by.xpath('/html/body/div[2]/div[2]/div/mat-dialog-container/nat-seat-maps-dialog/mat-dialog-content/div/div/div/mat-tab-group/div/mat-tab-body[1]/div/div[2]/button/span')),//all(by.tagName('button')),
+    mapSelectButton : element.all(by.xpath('/html/body/div[2]/div[2]/div/mat-dialog-container/nat-seat-maps-dialog/mat-dialog-content/div/div/div/mat-tab-group/div/mat-tab-body[1]/div/div[2]/button')),//all(by.tagName('button')),
     signupButton: element.all(by.cssContainingText('[class="mat-button-wrapper"]', 'Apply')),
 
     searchInput : element.all(by.className('mat-input-element'))

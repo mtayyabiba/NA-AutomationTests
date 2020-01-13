@@ -18,10 +18,14 @@ describe('Entering details on artist signup page',function(){
             helper.sendKeysUsingElement("",pageObject[keys],details.textFields[keys],keys);
         }
         helper.sendKeysUsingElement("",pageObject['confirmPassword'],details.textFields['password'],'confirmPassword');
-        
+    
+    });
+
+    it('should be able to select artist details',function(){
+        helper.selectSingleDropdown("",pageObject.countryCode,details.countryCode);
         helper.selectSingleDropdown("",pageObject.country,details.country);
         helper.selectSingleDropdown("",pageObject.city,details.city);
-        helper.selectSkill("",pageObject.skills,details.skills[0],details.skills[1],pageObject.ratingButton,pageObject.skillAddButton);
+        helper.selectSkill("",pageObject.skills,details.skills[0],details.skills[1],pageObject.ratingButton,pageObject.skillAddButton);        
     });
 
     it('should be able to select artist avail. time and days',function(){
@@ -38,9 +42,9 @@ describe('Entering details on artist signup page',function(){
         helper.uploadFile('images/artist-images/',3,element.all(by.css('input[type="file"]')),0);       
     });
 
-    it('should be able to submit artist details into system',function(){
-        helper.clickUsingElement("",pageObject.signupButton);
-        expect(browser.getCurrentUrl()).toContain("success");
+    // it('should be able to submit artist details into system',function(){
+    //     helper.clickUsingElement("",pageObject.signupButton);
+    //     expect(browser.getCurrentUrl()).toContain("success");
         
-    });
+    // });
 });
